@@ -2,12 +2,12 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Fibo {
+public class FiboLast {
     public static void main(String args[])
     {
-        int a = 0, b=1, c=0;
+        long a = 0, b=1, c=0;
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+        long n = sc.nextLong();
         if(n==0) {
             System.out.println("0");
         }
@@ -16,12 +16,13 @@ public class Fibo {
         }
         else
         {
-            for(int x=0;x<n-1;x++)
-        {
-            c = a+b;
-            a = b;
-            b = c;
+            for(long x=0;x<n-1;x++)
+            {
+                c = (a+b)%10;
+                a = b;
+                b = c;
+            }
+                System.out.println(c);
         }
-        System.out.println(c);}
     }
 }
