@@ -2,6 +2,7 @@ package com.company;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.math.MathContext;
 import java.util.Scanner;
 
 public class FiboSumLast {
@@ -27,10 +28,12 @@ public class FiboSumLast {
             }
             System.out.println(c-1);
         }*/
-        double sq = Math.sqrt(5);
-        BigDecimal k = BigDecimal.valueOf((Math.pow((1+sq)/2,n)-Math.pow((1-sq)/2,n))/sq);//binet formula
-        System.out.println(k);
-        System.out.println(k.toBigInteger());
+        BigDecimal sq = new BigDecimal("5");
+        MathContext mc = new MathContext("20");
+        System.out.println(sq);
+        //BigDecimal k = BigDecimal.valueOf((Math.pow((1+sq)/2,n)-Math.pow((1-sq)/2,n))/sq);//binet formula
+      //  System.out.println(k.subtract(new BigDecimal(1)));
+       // System.out.println(k.toBigInteger());
        // k--;
         //System.out.println(k%10);
 
