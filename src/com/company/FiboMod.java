@@ -4,7 +4,7 @@ import java.math.BigInteger;
 import java.util.Scanner;
 
 public class FiboMod {
-    static long get_pianso_period(long m)
+    static long get_pisano_period(long m)
     {
         long a = 0, b = 1, c = 0;
         for(long x=0;x<m*m;x++)
@@ -19,7 +19,7 @@ public class FiboMod {
     }
     static long fib(long n, long m)
     {
-        long remainder = n%get_pianso_period(m);
+        long remainder = n%get_pisano_period(m);
         //System.out.println(get_pianso_period(m));
         BigInteger a= new BigInteger("0");
         BigInteger b= new BigInteger("1");
