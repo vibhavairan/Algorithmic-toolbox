@@ -20,6 +20,6 @@ public class CollectSign {
     public static void main(String[] args)
     {
         ArrayList<Segment> lis = new ArrayList<>();
-        Collections.sort(lis);
+       // Collections.sort(lis);
     }
 }
